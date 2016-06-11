@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC09418B1D0BE9F00013143F /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC09418A1D0BE9F00013143F /* PostCell.swift */; };
 		EC944BCD1D0BD105004A9FF8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC944BCC1D0BD105004A9FF8 /* AppDelegate.swift */; };
 		EC944BCF1D0BD105004A9FF8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC944BCE1D0BD105004A9FF8 /* ViewController.swift */; };
 		EC944BD21D0BD105004A9FF8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC944BD01D0BD105004A9FF8 /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EC09418A1D0BE9F00013143F /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		EC944BC91D0BD105004A9FF8 /* MyHood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyHood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC944BCC1D0BD105004A9FF8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC944BCE1D0BD105004A9FF8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -76,6 +78,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EC0941891D0BE9BA0013143F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EC09418A1D0BE9F00013143F /* PostCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		EC944BC01D0BD105004A9FF8 = {
 			isa = PBXGroup;
 			children = (
@@ -100,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				EC944BFA1D0BD207004A9FF8 /* Model */,
+				EC0941891D0BE9BA0013143F /* View */,
 				EC944BCC1D0BD105004A9FF8 /* AppDelegate.swift */,
 				EC944BCE1D0BD105004A9FF8 /* ViewController.swift */,
 				EC944BD01D0BD105004A9FF8 /* Main.storyboard */,
@@ -270,6 +281,7 @@
 				EC944BFC1D0BD26E004A9FF8 /* Post.swift in Sources */,
 				EC944BCF1D0BD105004A9FF8 /* ViewController.swift in Sources */,
 				EC944BCD1D0BD105004A9FF8 /* AppDelegate.swift in Sources */,
+				EC09418B1D0BE9F00013143F /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -496,6 +508,7 @@
 				EC944BF31D0BD105004A9FF8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EC944BF41D0BD105004A9FF8 /* Build configuration list for PBXNativeTarget "MyHoodTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +517,7 @@
 				EC944BF61D0BD105004A9FF8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EC944BF71D0BD105004A9FF8 /* Build configuration list for PBXNativeTarget "MyHoodUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +526,7 @@
 				EC944BF91D0BD105004A9FF8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
