@@ -19,9 +19,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         tableView.delegate = self
         tableView.dataSource = self
         
-        var post = Post(imagePath: "", title: "Post 1", description: "post 1 description")
-        var post2 = Post(imagePath: "", title: "Post 2", description: "this is a second post of no significance")
-        var post3 = Post(imagePath: "", title: "Post 3", description: "thisis the 3rd and most important description")
+        let post = Post(imagePath: "", title: "Post 1", description: "post 1 description")
+        let post2 = Post(imagePath: "", title: "Post 2", description: "this is a second post of no significance")
+        let post3 = Post(imagePath: "", title: "Post 3", description: "thisis the 3rd and most important description")
         
         posts.append(post)
         posts.append(post2)
