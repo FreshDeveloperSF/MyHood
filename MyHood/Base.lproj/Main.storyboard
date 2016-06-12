@@ -139,10 +139,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="j5K-PI-Dup">
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="j5K-PI-Dup">
                                 <rect key="frame" x="-14" y="13" width="600" height="128"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Make New Post" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xdu-jN-Gcl">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Make New Post" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xdu-jN-Gcl">
                                         <rect key="frame" x="241" y="85" width="119" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="160" id="nKw-8E-CVv"/>
@@ -152,6 +152,13 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="52c-Nz-mXR">
+                                        <rect key="frame" x="22" y="81" width="60" height="30"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                        <state key="normal" title="Cancel">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.2901960784" green="0.56470588239999997" blue="0.8862745098" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -160,8 +167,37 @@
                                     <constraint firstItem="xdu-jN-Gcl" firstAttribute="centerX" secondItem="j5K-PI-Dup" secondAttribute="centerX" id="tMt-5N-LSz"/>
                                 </constraints>
                             </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="barrel-water-bridge" translatesAutoresizingMaskIntoConstraints="NO" id="ylb-sC-iOd">
+                                <rect key="frame" x="166" y="221" width="240" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="9oD-FW-055"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="240" id="BB9-K6-I6a"/>
+                                    <constraint firstAttribute="height" constant="240" id="Mzj-mB-4fl"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="240" id="xi0-4x-Lq9"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="12d-LV-57n">
+                                <rect key="frame" x="166" y="221" width="240" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="4p8-Mo-j8C"/>
+                                    <constraint firstAttribute="height" constant="240" id="aOg-iC-hqd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
+                                <state key="normal" title="+ Add Pic">
+                                    <color key="titleColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="j5K-PI-Dup" secondAttribute="trailing" id="4OQ-9C-DbR"/>
+                            <constraint firstItem="ylb-sC-iOd" firstAttribute="top" secondItem="j5K-PI-Dup" secondAttribute="bottom" constant="35" id="F3I-bI-1fi"/>
+                            <constraint firstItem="ylb-sC-iOd" firstAttribute="centerX" secondItem="mie-jc-koB" secondAttribute="centerX" id="FhB-qs-9BK"/>
+                            <constraint firstItem="j5K-PI-Dup" firstAttribute="top" secondItem="mie-jc-koB" secondAttribute="top" id="GVl-vg-fLa"/>
+                            <constraint firstItem="12d-LV-57n" firstAttribute="centerX" secondItem="ylb-sC-iOd" secondAttribute="centerX" id="J9G-Xb-PgQ"/>
+                            <constraint firstItem="j5K-PI-Dup" firstAttribute="leading" secondItem="mie-jc-koB" secondAttribute="leading" id="L2F-nc-g82"/>
+                            <constraint firstItem="12d-LV-57n" firstAttribute="centerY" secondItem="ylb-sC-iOd" secondAttribute="centerY" id="uLU-QG-h5V"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4RJ-QK-6jN" userLabel="First Responder" sceneMemberID="firstResponder"/>
