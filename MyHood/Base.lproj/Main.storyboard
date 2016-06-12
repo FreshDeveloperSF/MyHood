@@ -55,6 +55,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <constraints>
                                                 <constraint firstItem="Qmn-bx-Mb8" firstAttribute="trailing" secondItem="jUa-uc-dDg" secondAttribute="trailingMargin" id="9dh-CN-8mx"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="dbL-Ac-pq0" secondAttribute="trailing" constant="33" id="S7h-Fy-Ldo"/>
@@ -67,7 +68,7 @@
                                                 <constraint firstItem="Qmn-bx-Mb8" firstAttribute="top" secondItem="dbL-Ac-pq0" secondAttribute="bottom" constant="3" id="vh2-BJ-maf"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.2901960784" green="0.56470588239999997" blue="0.8862745098" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <connections>
                                             <outlet property="descLbl" destination="Qmn-bx-Mb8" id="trf-EP-YJQ"/>
                                             <outlet property="postImg" destination="Nao-OG-sYJ" id="k2j-LQ-EuJ"/>
